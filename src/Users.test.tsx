@@ -7,5 +7,7 @@ test('renders h1 element', () => {
     render(<Users />);
   });
   const h1Element = screen.getByText(/Hello Users and Members!/i);
+  const h2Element = screen.getByText(/How can I help?/i);
   expect(h1Element).toBeInTheDocument();
+  expect(h2Element).toBeInTheDocument();
 });
